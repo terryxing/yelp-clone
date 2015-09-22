@@ -29,6 +29,9 @@ Time spent: `10`
    - [ ] Categories should show a subset of the full list with a "See All" row to expand. Category list is here: http://www.yelp.com/developers/documentation/category_list (Links to an external site.)
 - [ ] Implement the restaurant detail page.
 
+can not create issue  /cc @codepathreview 
+
+
 ### Walkthrough
 
 ![Video Walkthrough](yelpdemo.gif)
