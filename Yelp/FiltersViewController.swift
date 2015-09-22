@@ -8,10 +8,19 @@
 
 import UIKit
 
+
+
+@objc protocol FiltersViewControllerDelegate {
+    optional func filtersViewController(FiltersViewController: FiltersViewController, didUpdateFilters filters: [String:AnyObject])
+}
+
+
 class FiltersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, SwitchCellDelegate {
     @IBOutlet weak var tableView: UITableView!
     
     var switchStates = [Int:Bool]()
+    
+    weak var delegate: FiltersViewControllerDelegate?
     
     var categories: [Dictionary<String, String>] = [["name" : "Afghan", "code": "afghani"],
         ["name" : "African", "code": "african"],
@@ -190,6 +199,26 @@ class FiltersViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     @IBAction func onSearchButton(sender: AnyObject) {
         
+        var filters = [String: AnyObject]()
+        
+        
+        var selectedCategories = [String]()
+        
+        for(row,isSelected) in switchStates {
+            
+            if isSelected {
+                
+                selectedCategories.append(categories[row]["code"]!)
+                
+            }
+        }
+        
+        if selectedCategories.count > 0 {
+            filters["categories"] = selectedCategories
+        }
+        
+        
+        delegate?.filtersViewController?(self, didUpdateFilters: filters)
         
         
     }
