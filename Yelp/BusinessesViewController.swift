@@ -8,11 +8,14 @@
 
 import UIKit
 
-class BusinessesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class BusinessesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate
+{
 
     var businesses: [Business]!
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBarTop: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,10 +24,13 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 120
 
+        searchBarTop.delegate = self
         
         self.navigationController?.navigationBar.barTintColor = UIColor.redColor()
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
+        self.navigationItem.titleView = self.searchBarTop;
+
         
 //        Business.searchWithTerm("Thai", completion: { (businesses: [Business]!, error: NSError!) -> Void in
 //            self.businesses = businesses
@@ -55,6 +61,16 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         }
         
     }
+    
+    
+    
+    func searchBarSearchButtonClicked(searchBarTop: UISearchBar) {
+         self.searchBarTop.resignFirstResponder()
+        
+    }
+    
+
+    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
