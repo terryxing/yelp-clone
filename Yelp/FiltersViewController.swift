@@ -237,7 +237,6 @@ class FiltersViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         let indexPath = tableView.indexPathForCell(switchCell)!
         
-        
         switchStates[indexPath.row] = value
         
         print("filter view controller got the switch event")
