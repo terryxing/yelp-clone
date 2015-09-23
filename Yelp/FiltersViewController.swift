@@ -220,6 +220,7 @@ class FiltersViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         delegate?.filtersViewController?(self, didUpdateFilters: filters)
         
+         dismissViewControllerAnimated(true, completion: nil)
         
     }
     override func viewDidLoad() {
