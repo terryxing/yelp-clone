@@ -25,9 +25,9 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         tableView.estimatedRowHeight = 120
 
         searchBarTop.delegate = self
-        
-        self.navigationController?.navigationBar.barTintColor = UIColor.redColor()
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+//        
+//        self.navigationController?.navigationBar.barTintColor = UIColor.redColor()
+//        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
         self.navigationItem.titleView = self.searchBarTop;
 
