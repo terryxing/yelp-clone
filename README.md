@@ -33,4 +33,4 @@ Time spent: `10`
 
 ### Walkthrough
 
-![Video Walkthrough](yelpdemo.gif)
+![Video Walkthrough](yelpdemo2.gif)
