@@ -8,7 +8,8 @@
 
 import UIKit
 
-class BusinessesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, FiltersViewControllerDelegate
+class BusinessesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate
+    //, FiltersViewControllerDelegate
 {
 
     var businesses: [Business]!
@@ -95,17 +96,19 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller..
         
-        let navigationController = segue.destinationViewController as! UINavigationController
-        let filtersViewController = navigationController.topViewController as! FiltersViewController
-        
-        filtersViewController.delegate = self
+//        let navigationController = segue.destinationViewController as! UINavigationController
+//        let filtersViewController = navigationController.topViewController as! FiltersViewController2
+//        
+//        filtersViewController.delegate = self
         
     }
     
-    func filtersViewController(filtersViewController: FiltersViewController, didUpdateFilters filters: [String : AnyObject]) {
+    func filtersViewController(filtersViewController: FiltersViewController2, didUpdateFilters filters: [String : AnyObject]) {
        
         
         let categories = filters["categories"] as? [String]
+        
+        //TODO, update the result selected in filter page here
         
         Business.searchWithTerm("restaurants", sort: nil, categories: categories, deals: nil) { (businesses: [Business]!, error: NSError!) -> Void in
     

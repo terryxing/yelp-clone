@@ -19,6 +19,11 @@
 		7123B13C1BAFBAD1001248C1 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7123B13B1BAFBAD1001248C1 /* BusinessCell.swift */; settings = {ASSET_TAGS = (); }; };
 		718B218C1BB12A64003A9C7A /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718B218B1BB12A64003A9C7A /* SwitchCell.swift */; settings = {ASSET_TAGS = (); }; };
 		718B218E1BB12BA0003A9C7A /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718B218D1BB12BA0003A9C7A /* FiltersViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		71DCB05F1BCB70F700CC5189 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DCB05E1BCB70F700CC5189 /* NavigationController.swift */; settings = {ASSET_TAGS = (); }; };
+		71DCB0611BCB71B300CC5189 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 71DCB0601BCB71B300CC5189 /* Settings.bundle */; settings = {ASSET_TAGS = (); }; };
+		71DCB0631BCB75A500CC5189 /* PreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DCB0621BCB75A500CC5189 /* PreferencesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		71DCB0651BCB777900CC5189 /* YelpFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DCB0641BCB777900CC5189 /* YelpFilter.swift */; settings = {ASSET_TAGS = (); }; };
+		71DCB0671BCB799F00CC5189 /* FiltersViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DCB0661BCB799F00CC5189 /* FiltersViewController2.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,11 @@
 		7123B13B1BAFBAD1001248C1 /* BusinessCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
 		718B218B1BB12A64003A9C7A /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
 		718B218D1BB12BA0003A9C7A /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
+		71DCB05E1BCB70F700CC5189 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		71DCB0601BCB71B300CC5189 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		71DCB0621BCB75A500CC5189 /* PreferencesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesTableViewController.swift; sourceTree = "<group>"; };
+		71DCB0641BCB777900CC5189 /* YelpFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpFilter.swift; sourceTree = "<group>"; };
+		71DCB0661BCB799F00CC5189 /* FiltersViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController2.swift; sourceTree = "<group>"; };
 		8616CF8D41FA29375FE84FF6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D8B2E3FFD1AF4F4A707E47 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BBD540129B10DFE60E8C24E2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +115,7 @@
 				222D8A6319CCF9F900D2DB53 /* LaunchScreen.xib */,
 				222D8A5819CCF9F900D2DB53 /* Supporting Files */,
 				222D8A7E19CCFAEF00D2DB53 /* Yelp-Bridging-Header.h */,
+				71DCB0601BCB71B300CC5189 /* Settings.bundle */,
 			);
 			path = Yelp;
 			sourceTree = "<group>";
@@ -146,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				22AAAA981AEA0A9700A544AF /* Business.swift */,
+				71DCB0641BCB777900CC5189 /* YelpFilter.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -155,6 +167,8 @@
 			children = (
 				22AAAA9B1AEA1EC300A544AF /* BusinessesViewController.swift */,
 				718B218D1BB12BA0003A9C7A /* FiltersViewController.swift */,
+				71DCB0621BCB75A500CC5189 /* PreferencesTableViewController.swift */,
+				71DCB0661BCB799F00CC5189 /* FiltersViewController2.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -172,6 +186,7 @@
 			children = (
 				7123B13B1BAFBAD1001248C1 /* BusinessCell.swift */,
 				718B218B1BB12A64003A9C7A /* SwitchCell.swift */,
+				71DCB05E1BCB70F700CC5189 /* NavigationController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -270,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71DCB0611BCB71B300CC5189 /* Settings.bundle in Resources */,
 				222D8A6019CCF9F900D2DB53 /* Main.storyboard in Resources */,
 				222D8A6519CCF9F900D2DB53 /* LaunchScreen.xib in Resources */,
 				222D8A6219CCF9F900D2DB53 /* Images.xcassets in Resources */,
@@ -324,12 +340,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7123B13C1BAFBAD1001248C1 /* BusinessCell.swift in Sources */,
+				71DCB05F1BCB70F700CC5189 /* NavigationController.swift in Sources */,
 				22AAAA9C1AEA1EC300A544AF /* BusinessesViewController.swift in Sources */,
 				718B218E1BB12BA0003A9C7A /* FiltersViewController.swift in Sources */,
+				71DCB0631BCB75A500CC5189 /* PreferencesTableViewController.swift in Sources */,
 				22AAAA991AEA0A9700A544AF /* Business.swift in Sources */,
 				222D8A7D19CCFAE000D2DB53 /* YelpClient.swift in Sources */,
+				71DCB0651BCB777900CC5189 /* YelpFilter.swift in Sources */,
 				222D8A5B19CCF9F900D2DB53 /* AppDelegate.swift in Sources */,
 				718B218C1BB12A64003A9C7A /* SwitchCell.swift in Sources */,
+				71DCB0671BCB799F00CC5189 /* FiltersViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
